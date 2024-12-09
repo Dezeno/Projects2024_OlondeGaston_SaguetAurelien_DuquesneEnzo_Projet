@@ -30,11 +30,11 @@ public class PlayerController : MonoBehaviour
         return movement;
     }
 
-    private void Move(float movement)
+    public void Move(float movement)
     {
-        Vector2 velo = rd2d.velocity;
-        velo.y = moveSpeed * movement;
-        rd2d.velocity = velo;
+        Vector2 velocity = rd2d.velocity;
+        velocity.y = moveSpeed * movement;
+        rd2d.velocity = velocity;
     }
 
 }
